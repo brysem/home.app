@@ -1,0 +1,72 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.panel-secondary {
+  @include panel-variant($panel-default-border, $panel-default-text, $brand-secondary, $panel-default-border);
+}
+
+.panel {
+    border: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.panel-heading {
+    border: 0;
+    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.panel-host {
+    text-align: center;
+    position: relative;
+    
+    .panel-heading {
+        font-weight: bold;
+    }
+    
+    .panel-body {
+        position: relative;
+    }
+    
+    .panel-version {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        text-align: right;
+    }
+    
+    .list-unstyled {
+        
+        position: absolute;
+        
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+        padding: 8px 10px;
+        
+        text-align: center;
+        line-height: 2.3rem;
+        
+        background-color: rgba(255, 255, 255, 0.9);
+        
+        a {
+            color: #222;
+            font-weight: bold;
+            &:hover {
+                color: $brand-info;
+                text-decoration: none;
+            }
+        }
+    }
+}
